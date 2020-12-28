@@ -74,7 +74,7 @@ public class StagingListenerImpl implements StagingListener {
 	/**
 	 * Pulls ALL batches from the last year then filters to see only batches with an
 	 * ending date between two specified parameters. If a new batch is found,
-	 * {@link shouldUpdate} will be set to true;
+	 * {@link shouldUpdate} will be set to true & {@link latestBatches} will be populated with the new batches
 	 */
 	@Override
 	public void checkForNewBatches() {
