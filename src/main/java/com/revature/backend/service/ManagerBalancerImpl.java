@@ -45,7 +45,9 @@ public class ManagerBalancerImpl implements ManagerBalancer {
         Map<Manager, Integer> managerMap, List<Associate> newAssociates) {
 
         Associate[][] batches = groupIntoBatches(newAssociates);
+        System.out.println("DEBUG: batches before sorting: " + batches.toString());
         sortBatchesBySize(batches);
+        System.out.println("DEBUG: batches after sorting: " + batches.toString());
         assignAssociatesEvenly(managerMap, batches);
     }
 
@@ -106,8 +108,8 @@ public class ManagerBalancerImpl implements ManagerBalancer {
      * Assigns batches in order, always assigning to the manager with the currently
      * smallest amount of associates.
      * 
-     * @param managerMap
-     * @param batches
+     * @param managerMap : associate counts WILL be updated
+     * @param batches : associate objects WILL be updated
      */
     public void assignAssociatesEvenly(
         Map<Manager, Integer> managerMap, Associate[][] batches){
@@ -128,10 +130,25 @@ public class ManagerBalancerImpl implements ManagerBalancer {
      * Searches the given map of managers/integers for the manager key with the smallest
      * Integer value (that is, the manager with the least assigned associates).
      * 
+     * If there is a tie, the first tied Manager in the map's key set will be returned.
+     * Given an empty map, returns null
+     * 
      * @param managerMap
      * @return
      */
     public Manager findManagerWithLeast(Map<Manager, Integer> managerMap) {
-        return null; // TODO
+        Manager currentManagerWithLeast = null;
+        int currentLeastAssociates = -1; // flagged to always accept first manager's count
+
+        for (Manager manager : managerMap.keySet()){
+            int numAssociates = managerMap.get(manager);
+            if (numAssociates < currentLeastAssociates || currentLeastAssociates == -1)
+            {
+                currentLeastAssociates = numAssociates;
+                currentManagerWithLeast = manager;
+            } 
+        }
+
+        return currentManagerWithLeast; 
     }
 }
