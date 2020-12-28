@@ -23,6 +23,4 @@ public interface BackendService {
 	 */
 	public List<Associate> findAssociatesByManagerId(int id);
 
-	public List<Associate> findNewAssociatesByManagerId(int manager);
-
 }
