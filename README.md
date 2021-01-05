@@ -11,7 +11,7 @@
 - Patrick Warring - Viewing, Creating, and Updating SWOT analysis for associates
 - Quincy Roman -  Team Lead, Docker containerization, Jenkins pipeline creation and maintenance, creation and viewing of SWOT analyses and their items.
 - Connor Ryan - Testing, Devops, Project structuring / reformating and Working on SWOT Analysis 
-- Jeremy Critchley - Team Lead, Created Controller, Controller and Service Testing, Modal
+- Jeremy Critchley - Team Lead, Created Associate Contrtoller, Controller and Service Testing, Modal Popup
 - Matthew LaFleur - View all and New Associate Angular, Firebase Authentication, Jasmine Testing
 
 ### Executive Summary
