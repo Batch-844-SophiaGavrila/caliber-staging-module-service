@@ -9,6 +9,7 @@
 - Suva Shahria - View recently graduated associates to staging assigned to a Manager, Testing, Modals
 - Ben Johnston - Team Lead, Developed listening service in Java that periodically checks Caliber for new batches.
 - Patrick Warring - Viewing, Creating, and Updating SWOT analysis for associates
+- Grayson McClellan - CRUD operation development for SWOT Analysis/Items, CSS developement
 - Quincy Roman -  Team Lead, Docker containerization, Jenkins pipeline creation and maintenance, creation and viewing of SWOT analyses and their items.
 - Connor Ryan - Testing, Devops, Project structuring / reformating and Working on SWOT Analysis 
 - Jeremy Critchley - Team Lead, Created Associate Contrtoller, Controller and Service Testing, Modal Popup
