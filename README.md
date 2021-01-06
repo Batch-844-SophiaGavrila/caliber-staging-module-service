@@ -3,12 +3,12 @@
 ## Revature Project #3
 
 ### Team Members:
-- Andrew Curry - Testing & Assigning Associates to Managers
-- Mareo Yapp - Viewing all associates assigned to a Manager, Testing and Documentation
-- Saleel Bey - Documentation, Styling, Retrieving Managers and associates
+- Andrew Curry - Testing & Assigning Associates to Managers.
+- Mareo Yapp - Viewing all associates assigned to a Manager, Testing and Documentation.
+- Saleel Bey - Documentation, Styling, Retrieving Managers and associates.
 
 ### Executive Summary
-- The Caliber API system will...
+- The Caliber API system provides us with information on associates.
 - A manager can login and view all associates automatically assigned to them by the system.
 - A SWOT analysis can be created for an associate.
 
